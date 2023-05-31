@@ -20,7 +20,7 @@ const Skill = () => {
 
             <div style={{ marginBottom: '1rem' }}><p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;h1&gt;</p><h1 className={style.skills}>my skills</h1><p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;/h1&gt;</p></div>
 
-            <div><p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;p&gt; &nbsp;</p> <p className={style.para}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p><p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&nbsp;&lt;/p&gt; </p></div>
+            <div><p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;p&gt; &nbsp;</p> <p className={style.para}>As a front-end developer, I sculpt captivating user interfaces with a touch of elegance, bringing life to designs and crafting immersive digital journeys that seamlessly blend aesthetics with functionality.</p><p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&nbsp;&lt;/p&gt; </p></div>
 
           </div>
           <div className={style.graph}><Bar />

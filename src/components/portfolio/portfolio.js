@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import style from './portfolio.module.css'
 import Arrow from '../arrow/Arrow'
-import image from '../../images/arseny-togulev-kGix6_gPKjI-unsplash.jpg'
+import forecast from '../../images/forcastemate.png'
+import envision from '../../images/envision.png'
+import smart from '../../images/smart.png'
+import space from '../../images/space.png'
+import iot from '../../images/iot.png'
+import asme from '../../images/asme.png'
 import styles from '../hero/hero.module.css'
 import { motion } from 'framer-motion'
 import { ToastContainer, toast } from 'react-toastify';
@@ -12,7 +17,7 @@ function Portfolio() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      toast('Bye, world!', {
+      toast('Includes internship projects', {
         autoClose: 2000,
         closeButton: false
       });
@@ -40,15 +45,7 @@ function Portfolio() {
     updatedStates[index] = false;
     setHovered(updatedStates);
   };
-  const backgroundImageUrl = image;
-  const containerStyles = {
-    backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-
-
-  };
+ 
   return (
     <div>
       {<motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}>
@@ -64,15 +61,20 @@ function Portfolio() {
           <div className={style.portfoliocontainer}>
             <div className={style.header}>
               <div>  <p className={`${styles.react} ${style.h1}`} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;h1&gt;</p><span className={style.text}> web developer <div style={{ WebkitTextStroke: '1px  rgb(240, 181, 175) ', color: 'transparent', display: 'inline' }}>portfolio</div></span> <p className={`${styles.react} ${style.h1}`} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;/h1&gt;</p></div>
-              <p className={style.para}> <p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;p&gt; &nbsp;</p > From Web Components and UI/UX animations to React.JS, Redux, Vue.JS, and Node.JS. Check out my latest web software development portfolio projects. <p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&nbsp;&lt;/p&gt; </p>
+              <p className={style.para}> <p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&lt;p&gt; &nbsp;</p > From Web Components Development and UI/UX animations to React.JS, Redux. Check out my latest web software development projects. <p className={`${styles.react} `} style={{ fontWeight: 'light !important', marginBottom: '0 !important', display: 'inline' }}>&nbsp;&lt;/p&gt; </p>
               </p>
             </div>
             <div className={style.projects}>
 
-              <div className={style.box} onMouseEnter={() => handleMouseEnter('0')} onMouseLeave={() => handleMouseLeave(0)} style={containerStyles}>
-                <div className={` animate__delay-2s ${style.ribbonWrap}`}>
-                  <div className={style.ribbon}>yumna</div>
-                </div>
+              <div className={style.box} onMouseEnter={() => handleMouseEnter('0')} onMouseLeave={() => handleMouseLeave(0)} style={{
+                backgroundImage:`url('${forecast}')`, backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}>
+              <a href='https://github.com/kyumna/ForecastMate' target='_blank' rel="noreferrer">
+              <div className={` animate__delay-2s ${style.ribbonWrap}`}>
+                 <div className={style.ribbon}>GITHUB</div>
+                </div></a>
                 <div className={style.headbar}>
                   <div className={style.circle}>
                     <ul >
@@ -81,7 +83,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Project Title</div>
+                  <div className={style.title}>Forecastemate</div>
                 </div>
 
                 {isHovered[0] && <div className={`${style.darkwindow} ${isHovered[0] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
@@ -91,28 +93,35 @@ function Portfolio() {
                       <li>CSS</li>
                       <li>JS</li>
                       <li>REACT</li>
+                      <li>API</li>
                     </ul>
 
                   </div>}
+
                   <main className={style.content} data-form-type="card">
-                  <a href="javascript:;" className={style.btnn}>
-                    <p className={style.btnCircle}></p>
-                    <p className={style.btnWhiteCircle}>
-                      <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
-                        <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
-                      </svg>
-                    </p>
-                    <p className={style.btnText}>Discover the project</p>
-                  </a>
-                </main>
+                    <a href="https://forecast-mate.vercel.app/" target='_blank' rel="noreferrer" className={style.btnn}>
+                      <p className={style.btnCircle}></p>
+                      <p className={style.btnWhiteCircle}>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
+                          <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
+                        </svg>
+                      </p>
+                      <p className={style.btnText}>Discover the project</p>
+                    </a>
+                  </main>
 
                 </div>}
               </div>
 
-              <div className={style.box} onMouseEnter={() => handleMouseEnter('1')} onMouseLeave={() => handleMouseLeave(1)} style={containerStyles}>
-                <div className={` animate__delay-2s ${style.ribbonWrap}`}>
-                  <div className={style.ribbon}>yumna</div>
-                </div>
+              <div className={style.box} onMouseEnter={() => handleMouseEnter('1')} onMouseLeave={() => handleMouseLeave(1)} style={{
+                backgroundImage:`url('${envision}')`, backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}>
+              <a href='https://envision22.netlify.app/' rel="noreferrer" target='_blank'>
+              <div className={` animate__delay-2s ${style.ribbonWrap}`}>
+                 <div className={style.ribbon}>VISIT</div>
+                </div></a>
                 <div className={style.headbar}>
                   <div className={style.circle}>
                     <ul>
@@ -121,7 +130,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Project Title</div>
+                  <div className={style.title}>Envision'22</div>
                 </div>
 
                 {isHovered[1] && <div className={`${style.darkwindow} ${isHovered[1] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
@@ -130,28 +139,33 @@ function Portfolio() {
                       <li >HTML</li>
                       <li>CSS</li>
                       <li>JS</li>
-                      <li>REACT</li>
+                      <li>BOOTSTRAP</li>
                     </ul>
 
                   </div>}
                   <main className={style.content} data-form-type="card">
-                  <a href="javascript:;" className={style.btnn}>
-                    <p className={style.btnCircle}></p>
-                    <p className={style.btnWhiteCircle}>
-                      <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
-                        <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
-                      </svg>
-                    </p>
-                    <p className={style.btnText}>Discover the project</p>
-                  </a>
-                </main>
+                    <a href="https://envision22.netlify.app/" target='_blank' rel="noreferrer" className={style.btnn}>
+                      <p className={style.btnCircle}></p>
+                      <p className={style.btnWhiteCircle}>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
+                          <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
+                        </svg>
+                      </p>
+                      <p className={style.btnText}>Discover the project</p>
+                    </a>
+                  </main>
                 </div>}
               </div>
 
-              <div className={style.box} onMouseEnter={() => handleMouseEnter('2')} onMouseLeave={() => handleMouseLeave(2)} style={containerStyles}>
-                <div className={` animate__delay-2s ${style.ribbonWrap}`}>
-                  <div className={style.ribbon}>yumna</div>
-                </div>
+              <div className={style.box} onMouseEnter={() => handleMouseEnter('2')} onMouseLeave={() => handleMouseLeave(2)} style={{
+                backgroundImage:`url('${smart}')`, backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }} >
+              <a href='https://smartcitylab.neduet.edu.pk/' rel="noreferrer" target='_blank'>
+              <div className={` animate__delay-2s ${style.ribbonWrap}`}>
+                 <div className={style.ribbon}>VISIT</div>
+                </div></a>
                 <div className={style.headbar}>
                   <div className={style.circle}>
                     <ul>
@@ -160,7 +174,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Project Title</div>
+                  <div className={style.title}>Smart City Lab - NEDUET</div>
                 </div>
 
                 {isHovered[2] && <div className={`${style.darkwindow} ${isHovered[2] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
@@ -169,28 +183,34 @@ function Portfolio() {
                       <li>HTML</li>
                       <li>CSS</li>
                       <li>JS</li>
-                      <li>REACT</li>
+                      <li>BOOTSTRAP</li>
+                     
                     </ul>
 
                   </div>}
                   <main className={style.content} data-form-type="card">
-                  <a href="javascript:;" className={style.btnn}>
-                    <p className={style.btnCircle}></p>
-                    <p className={style.btnWhiteCircle}>
-                      <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
-                        <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
-                      </svg>
-                    </p>
-                    <p className={style.btnText}>Discover the project</p>
-                  </a>
-                </main>
+                    <a rel="noreferrer" href="https://smartcitylab.neduet.edu.pk/" className={style.btnn}>
+                      <p className={style.btnCircle}></p>
+                      <p className={style.btnWhiteCircle}>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
+                          <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
+                        </svg>
+                      </p>
+                      <p className={style.btnText}>Discover the project</p>
+                    </a>
+                  </main>
                 </div>}
               </div>
 
-              <div className={style.box} onMouseEnter={() => handleMouseEnter('3')} onMouseLeave={() => handleMouseLeave(3)} style={containerStyles}>
-                <div className={` animate__delay-2s ${style.ribbonWrap}`}>
-                  <div className={style.ribbon}>yumna</div>
-                </div>
+              <div className={style.box} onMouseEnter={() => handleMouseEnter('3')} onMouseLeave={() => handleMouseLeave(3)} style={{
+                backgroundImage:`url('${space}')`, backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }} >
+              <a href='https://github.com/kyumna/Space-Tourism-Website' rel="noreferrer" target='_blank'>
+              <div className={` animate__delay-2s ${style.ribbonWrap}`}>
+                 <div className={style.ribbon}>GITHUB</div>
+                </div></a>
                 <div className={style.headbar}>
                   <div className={style.circle}>
                     <ul>
@@ -199,37 +219,42 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Project Title</div>
+                  <div className={style.title}>Space Tourism Website</div>
                 </div>
 
                 {isHovered[3] && <div className={`${style.darkwindow} ${isHovered[3] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
                   <div className={style.tech}>
                     <ul>
                       <li>HTML</li>
-                      <li>CSS</li>
+                      <li>SCSS</li>
                       <li>JS</li>
                       <li>REACT</li>
                     </ul>
 
                   </div>}
                   <main className={style.content} data-form-type="card">
-                  <a href="javascript:;" className={style.btnn}>
-                    <p className={style.btnCircle}></p>
-                    <p className={style.btnWhiteCircle}>
-                      <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
-                        <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
-                      </svg>
-                    </p>
-                    <p className={style.btnText}>Discover the project</p>
-                  </a>
-                </main>
+                    <a href="https://space-tourism-website-eta.vercel.app/" rel="noreferrer" className={style.btnn}>
+                      <p className={style.btnCircle}></p>
+                      <p className={style.btnWhiteCircle}>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
+                          <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
+                        </svg>
+                      </p>
+                      <p className={style.btnText}>Discover the project</p>
+                    </a>
+                  </main>
                 </div>}
               </div>
 
-              <div className={style.box} onMouseEnter={() => handleMouseEnter('4')} onMouseLeave={() => handleMouseLeave(4)} style={containerStyles}>
-                <div className={` animate__delay-2s ${style.ribbonWrap}`}>
-                  <div className={style.ribbon}>yumna</div>
-                </div>
+              <div className={style.box} onMouseEnter={() => handleMouseEnter('4')} onMouseLeave={() => handleMouseLeave(4)}  style={{
+                backgroundImage:`url('${iot}')`, backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}>
+              <a href='https://iot-devices.vercel.app/#iot' rel="noreferrer" target='_blank'>
+              <div className={` animate__delay-2s ${style.ribbonWrap}`}>
+                 <div className={style.ribbon}>VISIT</div>
+                </div></a>
                 <div className={style.headbar}>
                   <div className={style.circle}>
                     <ul>
@@ -238,7 +263,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Project Title</div>
+                  <div className={style.title}>IoT Devices</div>
                 </div>
 
                 {isHovered[4] && <div className={`${style.darkwindow} ${isHovered[4] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
@@ -247,28 +272,33 @@ function Portfolio() {
                       <li>HTML</li>
                       <li>CSS</li>
                       <li>JS</li>
-                      <li>REACT</li>
+                      <li>BOOTSTRAP</li>
                     </ul>
 
                   </div>}
                   <main className={style.content} data-form-type="card">
-                  <a href="javascript:;" className={style.btnn}>
-                    <p className={style.btnCircle}></p>
-                    <p className={style.btnWhiteCircle}>
-                      <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
-                        <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
-                      </svg>
-                    </p>
-                    <p className={style.btnText}>Discover the project</p>
-                  </a>
-                </main>
+                    <a rel="noreferrer" href="https://iot-devices.vercel.app/#iot" className={style.btnn}>
+                      <p className={style.btnCircle}></p>
+                      <p className={style.btnWhiteCircle}>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
+                          <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
+                        </svg>
+                      </p>
+                      <p className={style.btnText}>Discover the project</p>
+                    </a>
+                  </main>
                 </div>}
               </div>
 
-              <div className={style.box} onMouseEnter={() => handleMouseEnter('5')} onMouseLeave={() => handleMouseLeave(5)} style={containerStyles}>
-                <div className={` animate__delay-2s ${style.ribbonWrap}`}>
-                  <div className={style.ribbon}>yumna</div>
-                </div>
+              <div className={style.box} onMouseEnter={() => handleMouseEnter('5')} onMouseLeave={() => handleMouseLeave(5)}  style={{
+                backgroundImage:`url('${asme}')`, backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}>
+              <a href='http://asmeneduet.com/' rel="noreferrer" target='_blank'>
+              <div className={` animate__delay-2s ${style.ribbonWrap}`}>
+                 <div className={style.ribbon}>VISIT</div>
+                </div></a>
                 <div className={style.headbar}>
                   <div className={style.circle}>
                     <ul>
@@ -277,7 +307,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Project Title</div>
+                  <div className={style.title}>ASME NEDUET</div>
                 </div>
 
                 {isHovered[5] && <div className={`${style.darkwindow} ${isHovered[5] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
@@ -291,16 +321,16 @@ function Portfolio() {
 
                   </div>}
                   <main className={style.content} data-form-type="card">
-                  <a href="javascript:;" className={style.btnn}>
-                    <p className={style.btnCircle}></p>
-                    <p className={style.btnWhiteCircle}>
-                      <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
-                        <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
-                      </svg>
-                    </p>
-                    <p className={style.btnText}>Discover the project</p>
-                  </a>
-                </main>
+                    <a href="http://asmeneduet.com/" rel="noreferrer" target='_blank' className={style.btnn}>
+                      <p className={style.btnCircle}></p>
+                      <p className={style.btnWhiteCircle}>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
+                          <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
+                        </svg>
+                      </p>
+                      <p className={style.btnText}>Discover the project</p>
+                    </a>
+                  </main>
                 </div>}
               </div>
 
@@ -332,7 +362,7 @@ function Portfolio() {
           theme="dark"
           limit={1}
           progressStyle={{ backgroundColor: 'rgb(106,106,106)' }}
-          toastStyle={{ width: '16rem' }}
+          toastStyle={{ width: '16rem' ,zIndex:'1000000000000000'}}
         />
 
       </motion.div>}

@@ -237,6 +237,8 @@ Link.link {
   width: 160px;
   height: 150px;
   position: absolute;
+  z-index: 10;
+  cursor: pointer;
   top: 0px;
   right: 0px;
   animation-name: slideInAnimation;
@@ -377,6 +379,10 @@ main {
   left: 0;
   right: 0;
   text-align: center;
+}
+.tech>ul{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width:1334px) {
@@ -523,6 +529,7 @@ main {
   .headbar {
     line-height: 0.5rem !important;
     border: 2px solid ghostwhite;
+    z-index: 1000000;
   }
 
   .para {
@@ -579,6 +586,7 @@ main {
 
   .ribbonWrap {
     width: 120px;
+    
     /* Reduced width */
     height: 100px;
     /* Reduced height */

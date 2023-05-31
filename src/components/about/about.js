@@ -19,7 +19,7 @@ const About = () => {
             <h1 className={`light-blue-block ${aboutStyles.hey}`}><Icon icon="simple-icons:hey" /> Hi There!</h1>
             <p className={aboutStyles.name}> I'm <p className={aboutStyles.yumnaa}>Yumna Khan</p></p>
 
-            <p className='light-blue-block' >I specialize in <Icon style={{ fontSize: '18.5px' }} icon="mdi:graph-multiline" /> Ray Tracing Denoising,  Cross-Platform Rendering, and  Tools/Plugin Architecture. I have a deep passion for computer graphics, be it research in ray tracing and real time rendering, designing libraries and tools to help solve problems for engineers and technical artists, or teaching with highly visual video lectures on YouTube and notes on my blog. Let's talk!
+            <p className='light-blue-block' >Passionate about crafting captivating user experiences, I am a front-end developer dedicated to bringing ideas to life through elegant and intuitive designs. With a keen eye for detail and a deep understanding of modern web technologies, I strive to create visually stunning and seamlessly functional websites that leave a lasting impression. Join me on this journey as we explore the art of web development and shape the digital world together. <Icon style={{ fontSize: '18.5px' }} icon="mdi:graph-multiline" /> 
 
             </p>
 
@@ -31,20 +31,20 @@ const About = () => {
 
               <div className={aboutStyles.parentt}>
                 <div className={aboutStyles.hexagon}><span><Icon icon="ph:lightbulb-thin" /></span></div>
-                <h2>Fast</h2>
-                <div className={aboutStyles.explain}>Fast load times and lag free interaction, my highest priority.</div>
+                <h2>Intuitive</h2>
+                <div className={aboutStyles.explain}>Prioritizing intuitive and user-friendly UX/UI.</div>
               </div>
 
               <div className={aboutStyles.parentt}>
                 <div className={aboutStyles.hexagon}><span><Icon icon="ph:devices-thin" /></span></div>
-                <h2>Fast</h2>
-                <div className={aboutStyles.explain}>Fast load times and lag free interaction, my highest priority.</div>
+                <h2>Responsive</h2>
+                <div className={aboutStyles.explain}>My layouts will work on any device, big or small.</div>
               </div>
 
               <div className={aboutStyles.parentt}>
                 <div className={aboutStyles.hexagon}><span><Icon icon="ph:airplane-takeoff-thin" /></span></div>
-                <h2>Fast</h2>
-                <div className={aboutStyles.explain}>Fast load times and lag free interaction, my highest priority.</div>
+                <h2>Dynamic</h2>
+                <div className={aboutStyles.explain}>Transforming static websites into dynamic experiences is my passion.</div>
               </div>
 
               <div className={aboutStyles.parentt}>

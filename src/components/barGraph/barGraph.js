@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import barStyles from './BarGraph.css';
+
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -36,26 +36,42 @@ export const BarGraph = () => {
       };
     }, []);
     const data = {
-        labels: ['Mon', 'Tue', 'Wed','dd','DD','ss','ww'],
+        labels: ['React JS', 'JavaScript', 'SASS','Node JS','Redux','Express JS','Mongo DB'],
+      
         datasets: [
             {
                 label: 'My Skills',
-                data: [3, 6, 111],
-                backgroundColor: ["red", "blue", "green", "blue", "red", "blue"],
+                data: [20, 20, 25,15,20,15,20],
+                
+                
+                backgroundColor: ["#556b2f"],
                 borderColor: 'black',
                 borderWidth: 1,
 
             }
         ]
+    
     }
-    const options = {}
+    
+    const options = {
+        maintainAspectRatio:false,
+        scales: {
+            y: {
+                beginAtZero:true,
+              ticks: {
+               stepSize:10
+
+              }
+            }
+          }
+    }
     return (
-        <div className={barStyles.barHeight}><Bar
+        <div ><Bar
             data={data}
             width={1000}
             height={430}
-            options={{ maintainAspectRatio: false }}
-            // style={barStyles.barHeight}
+            options={options}
+          
         ></Bar></div>
     )
 }
