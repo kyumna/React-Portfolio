@@ -1,10 +1,10 @@
 .parent1 {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .main {
     /* border: 2px solid wheat; */
-    height: 100vh;
+    height: auto;
     width: 80%;
     margin: auto;
 
@@ -38,7 +38,7 @@
 .right {
     /* border: 2px solid aqua; */
     margin-top: 7rem;
-
+   
 
 }
 
@@ -60,6 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly !important;
+    margin-bottom: 3rem;
 }
 
 .hexagon>span {

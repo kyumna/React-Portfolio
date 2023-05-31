@@ -75,7 +75,7 @@
   color: blue;
 }
 
-@media only screen and (max-width:1025px) {
+@media only screen and (max-width:2000px) {
   .main1{width: 12vw;}
   .logo{ height: 23%;}
 }

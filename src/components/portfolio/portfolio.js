@@ -339,7 +339,7 @@ function Portfolio() {
             </div>
             <div className={style.reach}>
               <h1>Let's talk</h1>
-              <p>Wanna get in touch or talk about a project?</p>
+              <p>Want to get in touch or talk about a project?</p>
               <p>Feel free to contact me via email at <p className={style.link}>kyumna14@gmail.com</p>  </p>
 
             </div>
