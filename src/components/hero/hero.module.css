@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    font-family: sans-serif;
+
+}
+
+.main2 {
+    max-height: 100vh;
+    overflow: hidden !important;
+    /* border: 2px solid red; */
+    display: flex;
+
+    color: aliceblue;
+
+}
+
+.react {
+    color: rgb(107, 113, 113);
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem;
+
+}
+
+.export {
+    margin-top: 1.5rem;
+}
+
+.fragment,
+.div {
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+
+.hero {
+    /* border: 2px solid gold; */
+    margin-left: 2.5rem;
+    width: 90%;
+    min-height: fit-content;
+    padding: 1rem;
+
+}
+
+.div {
+    margin-top: 2.7rem;
+    margin-bottom: 0 !important;
+
+
+}
+
+.end {
+    margin-bottom: 2.7rem !important;
+}
+
+.hey {
+    height: 23rem !important;
+    margin-left: 2.9rem;
+    /* border: 2px solid gold; */
+}
+
+span {
+    font-family: 'sans-serif';
+    color: white;
+    font-size: 7rem;
+    text-shadow: none;
+    font-weight: 400;
+    -webkit-text-stroke: 1px transparent;
+    line-height: 120px;
+}
+
+
+
+.triangleUp {
+    -webkit-text-stroke: 1px rgb(240, 181, 175);
+    color: transparent;
+    font-size: 200px;
+    position: absolute;
+    bottom: 0 !important;
+    right: 10%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+.triangleDown {
+    -webkit-text-stroke: 1px rgb(240, 181, 175);
+    color: transparent;
+    font-size: 200px;
+    position: absolute;
+    bottom: 0 !important;
+    right: 6%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.logo {
+    display: none;
+}
+
+.buttonBlock {
+    width: 800px;
+    display: none;
+    /* margin: 200px auto; */
+}
+
+.social {
+    display: inline-block;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.social a {
+    display: block;
+    background: rgb(38, 38, 38);
+    padding: 7px;
+    position: relative;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.social a::before {
+    dislpay: block;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -20px;
+    top: 10px;
+    background: rgb(38, 38, 38);
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.social a::after {
+    dislpay: block;
+    content: "";
+    position: absolute;
+    bottom: -20px ;
+    left: -10px ;
+    height: 20px ;
+    width: 100% ;
+    transform: rotate(0deg) skewX(-45deg);
+    background: rgb(38, 38, 38);
+    transform: rotate(45deg) scewY(-45deg);
+}
+
+.social a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width:1179px) {
+    .main2 {
+        overflow-y: scroll !important;
+    }
+
+    .hero {
+        /* border: 2px solid gold; */
+        margin-left: 0;
+        width: 100%;
+
+
+    }
+
+    .react {
+        font-size: 1.1rem;
+        margin-top: 0.4rem !important;
+        margin-bottom: 0.4rem !important;
+
+    }
+
+    span {
+        font-size: 5.5rem;
+        line-height: 120px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:913px) {
+    .main2 {
+        display: block;
+        padding: 1.3rem;
+        padding-left: 1.6rem;
+    }
+
+    .hero {
+        margin-left: 0 !important;
+        width: 100% !important;
+        margin-top: 1.5rem;
+
+    }
+
+    .react {
+        color: rgb(107, 113, 113);
+        font-family: 'Caveat', cursive;
+        font-size: 1.6rem;
+
+
+    }
+
+    .return {
+        margin-bottom: 1.1rem !important;
+    }
+
+    .fragment,
+    .div {
+        margin-left: 0rem;
+        margin-bottom: 2rem !important;
+    }
+
+    .logo {
+        font-size: 8rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        display: block !important;
+        /* border: 2px solid firebrick; */
+        color: transparent;
+        height: fit-content !important;
+        -webkit-text-stroke: 1px rgb(240, 181, 175) !important;
+    }
+
+    .buttonBlock {
+        display: block;
+    }
+
+
+}
+
+@media only screen and (max-width:821px) {
+    .hero {
+        margin-top: 0rem;
+    }
+
+    .logo {
+        margin-top: 0.5rem;
+    }
+
+    .main2 {
+        padding-top: 0.4rem;
+    }
+}
+
+@media only screen and (max-width:751px) {
+    .return {
+        margin-bottom: 0.1rem !important;
+    }
+
+    .logo {
+        margin-top: 0.1rem !important;
+        padding: 0;
+    }
+
+    .main2 {
+        padding-top: 0.1rem;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .logo {
+        font-size: 5rem;
+        margin-left: 1rem;
+    }
+
+    .react {
+        color: rgb(107, 113, 113);
+        font-family: 'Caveat', cursive;
+        font-size: 1.1rem;
+        margin-bottom: 0 !important;
+    }
+
+    .hero {
+        margin-left: 0;
+        /* border: 2px solid gold; */
+        width: 100% !important;
+        min-width: 100%;
+        margin: 0;
+    }
+
+    .div {
+        margin-bottom: 1.4rem !important;
+    }
+
+    .main2 {
+        padding: 0;
+    }
+
+    span {
+        font-size: 3.5rem;
+        line-height: normal;
+    }
+
+    .hey {
+        margin-left: 1rem;
+        height: 13rem !important;
+    }
+
+}
+@media only screen and (max-width:415px) {
+   
+    .hey{
+        height: 17rem !important;
+    }
+    .buttonBlock{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width:459px){
+    .social a {
+        padding: 5px;
+    }
+}
+@media only screen and (max-width:376px){
+    .social a {
+        padding: 2.5px;
+    }
+}
+@media only screen and (max-width:360px){
+    .social a {
+        padding: 1.2px;
+    }
+    .social {
+        display: inline-block;
+        margin: 25px;
+        cursor: pointer;
+    }
+    
+}
+@media only screen and (max-width:2984px) and (min-width:2000px){
+span{
+    font-size: 9rem;
+    line-height: 150px;
+}
+.hey{
+    height: 28rem !important;
+}
+}
+@media only screen and (max-width:472px) and (min-width:389px){
+    .hey{
+        height: 17rem !important;
+    }
+}

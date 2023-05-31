@@ -1,0 +1,92 @@
+* {
+  /* overflow: hidden !important; */
+  box-sizing: border-box;
+}
+
+.main1 {
+  overflow: hidden !important;
+  width: 9vw;
+  height: 100vh;
+  /* border: 2px solid blue; */
+}
+
+.logo {
+  overflow: hidden !important;
+  height: 20%;
+  background-color: black;
+}
+
+.logo p {
+  /* border: 2px solid green; */
+  overflow: hidden !important;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  font-family: 'Lato', sans-serif;
+
+  font-size: 7rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+
+
+
+}
+
+#text3d, #text3dd {overflow: hidden !important;
+  color:transparent;
+  -webkit-text-stroke: 1px rgb(240, 181, 175) !important;
+}
+
+.links {overflow: hidden !important;
+  height: 80%;
+  /* border: 2px solid hotpink; */
+  background-color: #181818;
+
+}
+
+.links ul li {
+  overflow: hidden !important;
+  list-style: none;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+  gap: 1.5rem;
+  /* background-color: firebrick; */
+  height: 80%;
+  overflow: hidden !important;
+}
+
+.light-blue-block svg {
+  color: rgb(240, 181, 175) ;
+  font-size: 3rem;
+  cursor: pointer;
+
+}
+.light-blue-block:hover .iconify--inline {
+  color: blue;
+}
+
+@media only screen and (max-width:1025px) {
+  .main1{width: 12vw;}
+  .logo{ height: 23%;}
+}
+
+@media only screen and (max-width:913px) {
+  .main1{
+    display: none;
+  }
+}
+@media only screen and (max-width:541px) {
+  .light-blue-block svg {
+    font-size: 2rem;
+  }
+}
