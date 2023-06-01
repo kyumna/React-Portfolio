@@ -19,7 +19,7 @@ const About = () => {
             <h1 className={`light-blue-block ${aboutStyles.hey}`}><Icon icon="simple-icons:hey" /> Hi There!</h1>
             <p className={aboutStyles.name}> I'm <p className={aboutStyles.yumnaa}>Yumna Khan</p></p>
 
-            <p className='light-blue-block' >Passionate about crafting captivating user experiences, I am a front-end developer dedicated to bringing ideas to life through elegant and intuitive designs. With a keen eye for detail and a deep understanding of modern web technologies, I strive to create visually stunning and seamlessly functional websites that leave a lasting impression. Join me on this journey as we explore the art of web development and shape the digital world together. <Icon style={{ fontSize: '18.5px' }} icon="mdi:graph-multiline" /> 
+            <p className='light-blue-block' >Passionate about crafting captivating user experiences, I am a front-end developer dedicated to bringing <Icon className={aboutStyles.small} icon="ph:lightbulb-thin" /> ideas to life through elegant and intuitive designs. With a keen <Icon className={aboutStyles.small} icon="ph:eye-thin" /> eye for detail and a deep understanding of modern web technologies, I strive to create visually stunning and seamlessly functional websites that leave a  lasting impression. Join me on this journey as we explore the art of web development and shape the digital world together.  
 
             </p>
 

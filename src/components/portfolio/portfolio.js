@@ -174,7 +174,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Smart City Lab - NEDUET</div>
+                  <div className={style.title}>NCAI</div>
                 </div>
 
                 {isHovered[2] && <div className={`${style.darkwindow} ${isHovered[2] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
@@ -219,7 +219,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>Space Tourism Website</div>
+                  <div className={style.title}>Tourism</div>
                 </div>
 
                 {isHovered[3] && <div className={`${style.darkwindow} ${isHovered[3] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{
@@ -307,7 +307,7 @@ function Portfolio() {
                       <li></li>
                     </ul>
                   </div>
-                  <div className={style.title}>ASME NEDUET</div>
+                  <div className={style.title}>ASME</div>
                 </div>
 
                 {isHovered[5] && <div className={`${style.darkwindow} ${isHovered[5] ? style.darkwindowrolldown : style.darkwindowrollup}`}>{

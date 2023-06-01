@@ -141,7 +141,9 @@
 .parentt>h2 {
     color: rgb(202, 202, 202);
 }
-
+.small{
+    font-size:  25.5px !important;
+}
 @media only screen and (max-width:1025px) {
 
 
@@ -226,7 +228,7 @@
     }
 }
 
-@media only screen and (max-width:913px) {
+@media only screen and (max-width:946px) {
 
     .hexParent {
         display: flex;
@@ -234,6 +236,8 @@
         margin: auto;
         flex-wrap: wrap !important;
         justify-content: space-evenly !important;
+        padding: 2rem;
+        
     }
 
     .hexagon>span {
@@ -304,7 +308,7 @@
     }
 
     .parent {
-        margin-top: 7.4rem !important;
+        /* margin-top: 7.4rem !important; */
     }
 
     .parentt {
@@ -381,8 +385,50 @@
         margin-top: 1.5rem;
     }
 }
-@media only screen and (max-width:519px){
+@media only screen and (max-width:719px){
     .parentt{
         min-width: 100%;
+    }
+}
+@media only screen and (max-width:373px){
+    .yumnaa {
+        font-size: 2.4rem;
+    }
+}
+@media only screen and (max-width:347px){
+    .yumnaa {
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (max-width:324px){
+    .hey {
+        font-size: 2rem !important;
+    }
+    .yumnaa {
+        font-size: 2.1rem;
+    }
+}
+@media only screen and (max-width:308px){
+    
+    .yumnaa {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:294px){
+    
+    .yumnaa {
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (max-width:281px){
+    
+    .yumnaa {
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width:270px){
+    
+    .yumnaa {
+        font-size: 1.7rem;
     }
 }

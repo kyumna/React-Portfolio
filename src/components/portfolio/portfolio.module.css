@@ -267,15 +267,15 @@ Link.link {
   width: 250px;
   color: white;
   background-color: red;
-  padding: 8px 0;
+  padding: 8px 0 !important;
   font-size: 15px;
   top: 20px;
   transform: rotate(45deg);
-  position: absolute;
+ position: absolute;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-
+ 
 }
 
 .text {
@@ -540,7 +540,7 @@ main {
   }
 }
 
-@media only screen and (max-width:415px) {
+@media only screen and (max-width:436px) {
   .box {
     width: 100%;
   }
@@ -550,7 +550,7 @@ main {
   }
 
   .title {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
   }
 
   .text {
@@ -567,9 +567,16 @@ main {
 }
 
 @media only screen and (max-width:414px) {
-
+  .ribbon{
+    padding: 4px 0 !important;
+    position: relative;
+    left: 15%;
+    transform: translateX(-50%) rotate(45deg);
+  
+  }
   .title {
     font-size: 0.6rem !important;
+   
   }
 
   .text {
