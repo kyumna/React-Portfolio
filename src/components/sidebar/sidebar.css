@@ -5,7 +5,7 @@
 
 .main1 {
   overflow: hidden !important;
-  width: 9vw;
+  width: 8vw !important;
   height: 100vh;
   /* border: 2px solid blue; */
 }
@@ -88,5 +88,29 @@
 @media only screen and (max-width:541px) {
   .light-blue-block svg {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width:1550px) {
+  .main1{
+    width: 9vw !important;
+    /* border: 2px solid red; */
+  }
+}
+@media only screen and (max-width:1375px) {
+  .main1{
+    width: 10vw !important;
+    /* border: 2px solid blueviolet; */
+  }
+}
+@media only screen and (max-width:1255px) {
+  .main1{
+    width: 11vw !important;
+    /* border: 2px solid hotpink; */
+  }
+}
+@media only screen and (max-width:1119px) {
+  .main1{
+    width: 12vw !important;
+    /* border: 2px solid seagreen; */
   }
 }
