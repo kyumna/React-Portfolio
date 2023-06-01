@@ -340,15 +340,16 @@ span{
     height: 28rem !important;
 }
 }
-@media only screen and (max-width:472px) and (min-width:389px){
+@media only screen and (max-width:450px) and (min-width:389px){
     .hey{
         height: 17rem !important;
     }
 }
-@media only screen and (max-width:517px) and (min-width:450px){
+@media only screen and (max-width:503px) and (min-width:450px){
     .hey{
      
         margin-left: 0rem !important;
+        height: 11rem !important;
 
     }
     span{
