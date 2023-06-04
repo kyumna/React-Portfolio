@@ -233,7 +233,7 @@ function Portfolio() {
 
                   </div>}
                   <main className={style.content} data-form-type="card">
-                    <a href="https://space-tourism-kyumna.vercel.app/" rel="noreferrer" className={style.btnn}>
+                    <a href="https://space-tourism-kyumna.vercel.app/" target='_blank' rel="noreferrer" className={style.btnn}>
                       <p className={style.btnCircle}></p>
                       <p className={style.btnWhiteCircle}>
                         <svg xmlns="http://www.w3.org/2000/svg" id="iconArrowRight" viewBox="0 0 21 12">
