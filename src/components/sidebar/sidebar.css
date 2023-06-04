@@ -37,6 +37,7 @@
 }
 
 #text3d, #text3dd {overflow: hidden !important;
+  font-weight: bolder !important;
   color:transparent;
   -webkit-text-stroke: 1px rgb(240, 181, 175) !important;
 }
