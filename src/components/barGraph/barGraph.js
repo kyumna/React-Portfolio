@@ -41,7 +41,7 @@ export const BarGraph = () => {
         datasets: [
             {
                 label: 'My Skills',
-                data: [20, 20, 25,15,20,15,20],
+                data: [20, 20, 25,10,20,10,15],
                 
                 
                 backgroundColor: ["#556b2f"],

@@ -19,7 +19,6 @@ function AnimatedRoutes() {
   
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<Hero />} />
-    
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/about" element={<About />} />
       <Route path="/skills" element={<Skill  />} />
