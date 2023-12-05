@@ -36,12 +36,12 @@ export const BarGraph = () => {
       };
     }, []);
     const data = {
-        labels: ['React JS', 'JavaScript', 'SASS','Node JS','Redux','Express JS','Mongo DB'],
+        labels: ['React JS', 'JavaScript', 'SASS','Figma','Redux','Next JS','Code Optimization'],
       
         datasets: [
             {
                 label: 'My Skills',
-                data: [20, 20, 25,10,20,10,15],
+                data: [28, 27, 25,28,20,20,28],
                 
                 
                 backgroundColor: ["#556b2f"],
